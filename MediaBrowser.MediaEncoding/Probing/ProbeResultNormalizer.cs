@@ -176,7 +176,7 @@ namespace MediaBrowser.MediaEncoding.Probing
             }
             else
             {
-                var artist = tags.GetFirstNotNullNorWhiteSpaceValue("artist");
+                var artist = tags.GetFirstNotNullNorWhiteSpaceValue("artists");
                 info.Artists = artist is null
                     ? Array.Empty<string>()
                     : SplitDistinctArtists(artist, _nameDelimiters, true).ToArray();
